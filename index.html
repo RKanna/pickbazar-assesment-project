@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="
+    text/css"
+      href="./styles/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <title>PickBazar Landing Page</title>
+    <link rel="shortcut icon" href="icons/calculator.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="row">
+        <div class="left-logo-section">
+          <div class="logo-container">
+            <img class="logo" src="images/PickBazar.webp" alt="" />
+          </div>
+
+          <!-- <select name="items" id="items" class="items">
+            <option value="0" data-icon="icons/cosmetics.png">Makeup</option>
+            <option value="2">Grocery</option>
+            <option value="3">Bakery</option>
+            <option value="4">Makeup</option>
+            <option value="5">Bags</option>
+            <option value="6">Clothing</option>
+            <option value="7">Furniture</option>
+            <option value="8">Daily Needs</option>
+            <option value="9">Books</option>
+          </select> -->
+          <div class="collabsible-entire">
+            <input type="checkbox" id="collabsible-title" />
+            <label
+              for="collabsible-title"
+              class="collabsible-title"
+              id="collabsible-title"
+              onclick="clickElement()"
+            >
+              <span class="dummy">
+                <img class="icon-makeup" alt="" src="icons/cosmetics.png" />
+                Makeup
+                <i class="fa-solid fa-arrow-down"></i>
+              </span>
+            </label>
+            <div class="text-content-collabsible">
+              <ul class="collabse">
+                <li class="list-collabse">
+                  <a href="#" class="items-cosmetics" target="_blank"
+                    >Grocery</a
+                  >
+
+                  <br />
+
+                  <a href="#" class="items-cosmetics" target="_blank">Bakery</a>
+
+                  <br />
+
+                  <a href="#" class="items-cosmetics" target="_blank">Makeup</a>
+
+                  <br />
+
+                  <a href="#" class="items-cosmetics" target="_blank">Bags</a>
+
+                  <br />
+
+                  <a href="#" class="items-cosmetics" target="_blank"
+                    >Clothing</a
+                  >
+
+                  <br />
+
+                  <a href="#" class="items-cosmetics" target="_blank"
+                    >Furniture</a
+                  >
+
+                  <br />
+
+                  <a href="#" class="items-cosmetics" target="_blank"
+                    >Daily Needs</a
+                  >
+
+                  <br />
+
+                  <a href="#" class="items-cosmetics" target="_blank">Books</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="before-right-nav">
+          <div class="right-element-section">
+            <ul>
+              <li>Shops</li>
+              <li>Offers</li>
+              <li>FAQ</li>
+              <li>Contact</li>
+              <li class="nav-seller">
+                <button
+                  class="nav-btn"
+                  onclick="window.open('#', '_blank')"
+                  value="button"
+                >
+                  Become a Seller
+                </button>
+              </li>
+              <li class="nav-join">
+                <button class="nav-btn" value="button">Join</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="bc-image-container">
+        <img class="main-bg-img" alt="" src="images/image.png" />
+        <div class="content-container">
+          <div class="text-container">
+            <h1 class="first-heading">Branded & imported makeups</h1>
+            <p class="first-para">
+              Easiest and cheapest way to get your branded & imported makeups
+            </p>
+          </div>
+          <div class="main-cart-container">
+          <div class="cart-container-el">
+          <div class="cart-box">
+            </i><span><i class="fa-solid fa-cart-shopping"></i> 0 Item</span>
+            <div class="white-space">
+              <p class="contentelement">$0.00</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="search-container">
+            <input
+              type="text"
+              value=""
+              placeholder="Search your product from here"
+              class="searchBar"
+            />
+            <button class="seach-btn">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider-main-container">
+      <i class="fa-solid fa-arrow-left button" id="previous"></i>
+      <div class="main-image-container">
+        <div class="img-container" id="slideContainer">
+          <img class="image1" alt="" src="images/offer-5.png"/>
+          <img class="image1" alt="" src="images/offer-4.png"/>
+          <img class="image1" alt="" src="images/offer-3.png"/>
+          <img class="image1" alt="" src="images/offer-2.png"/>
+          <img class="image1" alt="" src="images/offer-1.png"/>
+        </div>
+        <i class="fa-solid fa-arrow-right button" id="next"></i>
+      </div>
+    </section>
+    <section class="left-list-container">
+      <div class="items-presentlist">
+      <div class="list-box">
+        <p><a href="#"> <img class="face" alt="" src="icons/face.png"> Face</a></p>
+        <br>
+        <p> <a href="#"><img class="face" alt="" src="icons/eye.png"> Eyes</a></p>
+        <br>
+        <p> <a href="#"><img class="face" alt="" src="icons/lips.png"> Lips</a></p>
+        <br>
+        <p> <a href="#"><img class="face" alt="" src="icons/accessories.png"> Accessories</a></p>
+        <br>
+        <p> <a href="#"><img class="face" alt="" src="icons/razor.png"> Shaving Needs</a></p>
+        <br>
+        <p><a href="#"> <img class="face" alt="" src="icons/toothpaste.png"> Oral Care</a></p>
+        <br>
+        <p> <a href="#"><img class="face" alt="" src="icons/facial-laser.png"> Facial Care</a></p>
+        <br>
+        <p> <a href="#"><img class="face" alt="" src="icons/spray-bottle.png"> Deodorant</a></p>
+        <br>
+        <p> <a href="#"><img class="face" alt="" src="icons/bath.png"> Bath & Oil</a></p>
+
+      </div>
+      </div>
+    </section>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
