@@ -289,6 +289,7 @@ a {
   position: relative;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+  /* z-index: -1; */
 }
 .slider-main-container i.button {
   position: absolute;
@@ -330,6 +331,32 @@ i.button:active {
   height: 40rem;
   position: absolute;
   top: 0rem;
+}
+
+.white-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-left: 11rem;
+}
+.banner-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.banner {
+  width: 18rem;
+  height: 20rem;
+  background-color: gray;
+  cursor: pointer;
+}
+.img-container {
+  width: 100%;
 }
 
 @media screen and (max-width: 998px) {
