@@ -29,7 +29,7 @@ body {
   height: auto;
   background-color: #fafafa;
   padding: 2rem;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .logo-container {
@@ -315,6 +315,12 @@ i#next {
 i.button:active {
   transform: scale(0.94) translateY(-50%);
 }
+
+.left-list-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
 .list-box {
   display: flex;
   flex-direction: column;
@@ -322,10 +328,8 @@ i.button:active {
   background-color: white;
   width: 15rem;
   height: 40rem;
-  position: fixed;
-  top: 20rem;
-}
-.left-list-container {
+  position: absolute;
+  top: 0rem;
 }
 
 @media screen and (max-width: 998px) {
@@ -343,5 +347,17 @@ i.button:active {
   }
   .collabsible-entire {
     display: none;
+  }
+  .hero-section {
+    display: none;
+  }
+  .slider-main-container {
+    margin-top: 0;
+  }
+  i#previous {
+    left: 0.5rem;
+  }
+  i#next {
+    right: 10rem;
   }
 }
