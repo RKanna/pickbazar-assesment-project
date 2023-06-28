@@ -347,7 +347,7 @@ i.button:active {
   flex-direction: column;
   padding: 2rem;
   background-color: white;
-  width: 13.5rem;
+  width: 13rem;
   height: 40rem;
   position: absolute;
   top: 0rem;
@@ -358,7 +358,7 @@ i.button:active {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .banner {
   width: 20.2rem;
@@ -452,7 +452,7 @@ h3 {
 }
 .row-banner-last {
   align-self: flex-start;
-  margin-left: 1.9rem;
+  margin-left: 4.1rem;
 }
 .expert {
   margin-top: 6rem;
