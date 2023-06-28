@@ -353,6 +353,9 @@ i.button:active {
   top: 0rem;
   bottom: 0rem;
 }
+.white-banner-container {
+  margin-left: -7rem;
+}
 .banner-row {
   display: flex;
   flex-direction: row;
