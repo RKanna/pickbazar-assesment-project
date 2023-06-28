@@ -163,6 +163,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
+  height: 26.5rem;
 }
 .bc-image-container {
   display: flex;
@@ -183,7 +184,7 @@ a {
 .main-bg-img {
   position: absolute;
   top: 0;
-  height: 36rem;
+  height: 42.5rem;
   z-index: -1;
 }
 .first-heading {
@@ -196,25 +197,31 @@ a {
   padding-bottom: 3rem;
 }
 .searchBar {
-  padding: 1rem 15rem 1rem 15rem;
+  padding: 1.5rem 15rem 1.5rem 15rem;
   border: none;
   outline: none;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   box-shadow: var(--dark-shadow);
+  position: relative;
 }
 .searchBar:hover {
-  border: 1px solid green;
+  border: 1px solid #009f7f;
 }
 .seach-btn {
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
   border: none;
   outline: none;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   box-shadow: var(--dark-shadow);
   cursor: pointer;
-  background-color: green;
+  background-color: #009f7f;
+  display: flex;
+  gap: 0.5rem;
+}
+.seach-btn:hover {
+  background-color: #025445;
 }
 .search-container {
   display: flex;
@@ -240,9 +247,13 @@ a {
   align-items: center;
   width: 6rem;
   height: 6rem;
-  background-color: green;
+  background-color: #009f7f;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+}
+.spItem {
+  color: white;
+  padding-bottom: 1rem;
 }
 .main-cart-container {
   position: fixed;
@@ -317,6 +328,15 @@ i.button:active {
   transform: scale(0.94) translateY(-50%);
 }
 
+.white-banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-left: 15rem;
+}
 .left-list-container {
   width: 100%;
   height: auto;
@@ -327,38 +347,127 @@ i.button:active {
   flex-direction: column;
   padding: 2rem;
   background-color: white;
-  width: 15rem;
+  width: 13.5rem;
   height: 40rem;
   position: absolute;
   top: 0rem;
-}
-
-.white-banner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 2rem;
-  padding-left: 11rem;
+  bottom: 0rem;
 }
 .banner-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .banner {
-  width: 18rem;
-  height: 20rem;
-  background-color: gray;
+  width: 20.2rem;
+  height: 30rem;
+  background-color: white;
   cursor: pointer;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
 }
-.img-container {
+.img-shop-container {
   width: 100%;
 }
-
+.cosmetics-img {
+  width: 100%;
+}
+.discount {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+.pricing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.delel {
+  padding-top: 1rem;
+  color: #afb4be;
+}
+.anchor-banner {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  width: 2.5rem;
+  height: 1.5rem;
+  background-color: #eab308;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+h3 {
+  font-size: medium;
+  font-weight: 600;
+  color: #3b4450;
+  font-size: 0.9rem;
+}
+.qty {
+  color: #3b4450;
+}
+.price {
+  color: #0fa586;
+  font-weight: 700;
+}
+.btn-cart {
+  background-color: white;
+  border-radius: 1.2rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  cursor: pointer;
+}
+.btn-cart:hover {
+  background-color: #0fa586;
+}
+.pricing-container-discount-not {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.price-not-discount {
+  margin-top: 1rem;
+  color: #0fa586;
+  font-weight: 700;
+}
+.not-dicount-img {
+  margin-top: 2rem;
+}
+.wet-wild {
+  width: 80%;
+  margin-left: 1.6rem;
+}
+.true-match {
+  padding-bottom: 4rem;
+}
+.lancom {
+  width: 67%;
+  margin-left: 2rem;
+}
+.row-banner-last {
+  align-self: flex-start;
+  margin-left: 1.9rem;
+}
+.expert {
+  margin-top: 6rem;
+}
+.eyeshadow {
+  width: 80%;
+}
+.magnify {
+  color: white;
+  margin-top: -0.2rem;
+}
+.searchBar::placeholder {
+  position: absolute;
+  left: 2rem;
+}
 @media screen and (max-width: 998px) {
   .right-element-section {
     display: none;
