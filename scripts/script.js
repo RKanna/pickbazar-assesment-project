@@ -29,3 +29,26 @@ sectionSlider.addEventListener("mouseover", () => {
 sectionSlider.addEventListener("mouseleave", () => {
   buttonsAll.forEach((button) => (button.style.display = "none"));
 });
+
+window.addEventListener("scroll", function () {
+  let sideBar = document.getElementById("side-bar");
+  let shopContainer = document.getElementById("shop-container");
+  // var scrollPosition = window.scrollY || window.pageYOffset;
+  let scrollPosition = window.scrollY;
+
+  let shopContainerTop = shopContainer.offsetTop;
+  let shopContainerHeight = shopContainer.offsetHeight;
+
+  if (scrollPosition >= shopContainerTop) {
+    sideBar.classList.remove("position-list-box1");
+    sideBar.classList.add("position-list-box2");
+  } else {
+    sideBar.classList.add("position-list-box1");
+    sideBar.classList.remove("position-list-box2");
+  }
+
+  if (scrollPosition >= shopContainerTop + shopContainerHeight) {
+    sideBar.classList.add("position-list-box1");
+    sideBar.classList.remove("position-list-box2");
+  }
+});
