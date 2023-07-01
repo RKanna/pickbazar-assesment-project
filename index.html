@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="icons/calculator.png" type="image/x-icon" />
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="row">
         <div class="left-logo-section">
           <div class="logo-container">
@@ -108,13 +108,13 @@
             </span>
           </div>
         </div>
-        <div class="center-element-div">
-          <button class="nav-search-btn">
+        <div class="center-element-div" id="nav-search-element">
+          <button class="nav-search-btn" id="nav-search-button">
             <img class="magnify-img" alt="" src="icons/magnifying-glass.png">
           </button>
-          <input class="search-nav" type="text" value="">
+          <input class="search-nav" type="text" value="" id="nav-searchbar" placeholder="Search your products from here">
         </div>
-        <div class="before-right-nav">
+        <div class="before-right-nav" id="right-nav-element">
           <div class="right-element-section">
             <ul>
               <li class="nav-link">Shops</li>
@@ -148,7 +148,7 @@
               Easiest and cheapest way to get your branded & imported makeups
             </p>
           </div>
-          <div class="main-cart-container">
+          <div class="main-cart-container" id="cartbox">
           <div class="cart-container-el">
           <div class="cart-box">
             </i><span class="spItem"><i class="fa-solid fa-cart-shopping"></i> 0 Item</span>
@@ -158,7 +158,7 @@
           </div>
           </div>
           </div>
-          <div class="search-container">
+          <div class="search-container" id="hero-searchbar">
             <input
               type="text"
               value=""
