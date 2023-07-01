@@ -39,7 +39,7 @@
             <option value="8">Daily Needs</option>
             <option value="9">Books</option>
           </select> -->
-          <div class="collabsible-entire">
+          <!-- <div class="collabsible-entire">
             <input type="checkbox" id="collabsible-title" />
             <label
               for="collabsible-title"
@@ -97,14 +97,30 @@
               </ul>
             </div>
           </div>
+        </div> -->
+        <div class="nav-white-banner">
+          <div class="nav-link-page">
+            <span class="dummy">
+              <img class="icon-makeup" alt="" src="icons/cosmetics.png" />
+              Makeup
+              <i class="fa-sharp fa-solid fa-caret-up faicon fa-rotate-180"></i>
+              <!-- <i class="fa-solid fa-arrow-down faicon"></i> -->
+            </span>
+          </div>
+        </div>
+        <div class="center-element-div">
+          <button class="nav-search-btn">
+            <img class="magnify-img" alt="" src="icons/magnifying-glass.png">
+          </button>
+          <input class="search-nav" type="text" value="">
         </div>
         <div class="before-right-nav">
           <div class="right-element-section">
             <ul>
-              <li>Shops</li>
-              <li>Offers</li>
-              <li>FAQ</li>
-              <li>Contact</li>
+              <li class="nav-link">Shops</li>
+              <li class="nav-link">Offers</li>
+              <li class="nav-link">FAQ</li>
+              <li class="nav-link">Contact</li>
               <li class="nav-seller">
                 <button
                   class="nav-btn"
@@ -159,7 +175,7 @@
         </div>
       </div>
     </section>
-    <section class="slider-main-container">
+    <section class="slider-main-container" id="slider-container">
       <i class="fa-solid fa-arrow-left button" id="previous"></i>
       <div class="main-image-container">
         <div class="img-container" id="slideContainer">
@@ -174,30 +190,31 @@
     </section>
     <section class="left-list-container">
       <div class="items-presentlist">
-      <div class="list-box">
-        <p><a href="#"> <img class="face" alt="" src="icons/face.png"> Face</a></p>
+      <div class="list-box position-list-box1" id="side-bar">
+        <p><a href="#" class="colour-list"> <img class="face" alt="" src="icons/face.png"> Face</a></p>
         <br>
-        <p> <a href="#"><img class="face" alt="" src="icons/eye.png"> Eyes</a></p>
+        <p> <a href="#" class="colour-list"><img class="face" alt="" src="icons/eye.png"> Eyes</a></p>
         <br>
-        <p> <a href="#"><img class="face" alt="" src="icons/lips.png"> Lips</a></p>
+        <p> <a href="#" class="colour-list"><img class="face" alt="" src="icons/lips.png"> Lips</a></p>
         <br>
-        <p> <a href="#"><img class="face" alt="" src="icons/accessories.png"> Accessories</a></p>
+        <p> <a href="#" class="colour-list"><img class="face" alt="" src="icons/accessories.png"> Accessories</a></p>
         <br>
-        <p> <a href="#"><img class="face" alt="" src="icons/razor.png"> Shaving Needs</a></p>
+        <p> <a href="#" class="colour-list"><img class="face" alt="" src="icons/razor.png"> Shaving Needs</a></p>
         <br>
-        <p><a href="#"> <img class="face" alt="" src="icons/toothpaste.png"> Oral Care</a></p>
+        <p><a href="#" class="colour-list"> <img class="face" alt="" src="icons/toothpaste.png"> Oral Care</a></p>
         <br>
-        <p> <a href="#"><img class="face" alt="" src="icons/facial-laser.png"> Facial Care</a></p>
+        <p> <a href="#" class="colour-list"><img class="face" alt="" src="icons/facial-laser.png"> Facial Care</a></p>
         <br>
-        <p> <a href="#"><img class="face" alt="" src="icons/spray-bottle.png"> Deodorant</a></p>
+        <p> <a href="#" class="colour-list"><img class="face" alt="" src="icons/spray-bottle.png"> Deodorant</a></p>
         <br>
-        <p> <a href="#"><img class="face" alt="" src="icons/bath.png"> Bath & Oil</a></p>
+        <p> <a href="#" class="colour-list"><img class="face" alt="" src="icons/bath.png"> Bath & Oil</a></p>
 
       </div>
       </div>
     </section>
-    <section class="shopping-items-container">
-      <div class="white-banner-container">
+    <section class="shopping-items-container" >
+      
+      <div class="white-banner-container" id="shop-container">
         <div class="banner-row">
           <div class="banner">
             <div class="discount">
@@ -1160,6 +1177,11 @@
           
         
         </div>
+      </div>
+    </section>
+    <section class="for-btn-only">
+      <div class="button-container">
+         <button class="loadmore-btn">Load More</button>
       </div>
     </section>
     <script src="./scripts/script.js"></script>
