@@ -552,7 +552,7 @@ h3 {
   background-color: #f3f4f6;
 }
 .search-nav-clicked {
-  border: 1px solid green;
+  border: 1px solid #0fa586;
   border-left: none;
   background-color: white;
 }
@@ -586,7 +586,7 @@ h3 {
   cursor: pointer;
 }
 .nav-search-btn-clicked {
-  border: 1px solid green;
+  border: 1px solid #0fa586;
   border-right: none;
   background-color: white;
 }
