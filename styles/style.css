@@ -30,8 +30,10 @@ body {
   background-color: #fafafa;
   padding: 2rem 2rem 0.5rem 2rem;
   position: fixed;
-  border-bottom: 1px solid #e5e7eb;
   z-index: 10000;
+}
+.navbar-border {
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .logo-container {
@@ -313,6 +315,9 @@ a {
   border-bottom: 1px solid #e5e7eb;
   /* z-index: -1; */
 }
+.slider-z-index {
+  z-index: -1;
+}
 .slider-main-container i.button {
   position: absolute;
   width: 2rem;
@@ -541,10 +546,15 @@ h3 {
   height: 3rem;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  border: 1px solid green;
+
   outline: none;
-  border-left: none;
+  border: none;
   background-color: #f3f4f6;
+}
+.search-nav-clicked {
+  border: 1px solid green;
+  border-left: none;
+  background-color: white;
 }
 .nav-link-page {
   width: 9rem;
@@ -569,10 +579,16 @@ h3 {
   height: 3rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  border: 1px solid green;
+
   outline: none;
   background-color: #f3f4f6;
+  border: none;
+  cursor: pointer;
+}
+.nav-search-btn-clicked {
+  border: 1px solid green;
   border-right: none;
+  background-color: white;
 }
 .colour-list {
   color: #4b5563;
